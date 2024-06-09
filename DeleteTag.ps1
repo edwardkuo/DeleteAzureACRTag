@@ -2,8 +2,8 @@
 #az login
 
 # 獲取 ACR 登入服務的名稱
-$registryName = "kTCDockRegistry"
-$resourceGroupName = "KTCFE.DevOps"
+$registryName = "Azure ACR服務名稱"
+$resourceGroupName = ACR資源群組"
 az acr show --name $registryName --resource-group $resourceGroupName --query loginServer --output tsv
 
 
