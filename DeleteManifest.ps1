@@ -2,8 +2,8 @@
 # Connect-AzAccount
 
 # 定義 ACR 名稱和資源組名稱
-$registryName = "kTCDockRegistry"
-$resourceGroupName = "KTCFE.DevOps"
+$registryName = "Azure ACR服務名稱"
+$resourceGroupName = ACR資源群組"
 
 
 az acr show --name $registryName --resource-group $resourceGroupName --query loginServer --output tsv
